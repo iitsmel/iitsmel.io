@@ -1,0 +1,202 @@
+.title{
+    font-size: 64px;
+    color: #f8e5e5;
+    margin: 5px 0;
+    position: absolute;
+    bottom:50px;
+    right: 50px;
+}
+
+
+/* profile adjust starts */
+
+.move1 {
+    margin: 5px 0;
+    position: absolute;
+    top:1030px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+
+/* 50px */
+
+.move2{
+    margin: 5px 0;
+    position: absolute;
+    top:1085px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+
+/* 30px */
+
+.move3{
+    margin: 5px 0;
+    position: absolute;
+    top:1115px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+
+/* 50px */
+
+.move4{
+    margin: 5px 0;
+    position: absolute;
+    top:1165px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+
+/* 30px */
+
+.move5{
+    margin: 5px 0;
+    position: absolute;
+    top:1195px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+
+/* 50px */
+
+.move6{
+    margin: 5px 0;
+    position: absolute;
+    top:1245px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+
+
+/* 30px */
+
+.move7{
+    margin: 5px 0;
+    position: absolute;
+    top:1275px;
+    left: 50px;
+    color: #c39ea0;
+    font-size: 30px;
+}
+.profile-pic{
+    top:1000px;
+    position: absolute;
+    right: 50px;
+    max-width: 300px;
+    max-width: 300px;
+}
+
+.quote{
+    margin: 5px 0;
+    position: absolute;
+    top:1350px;
+    right: 50px;
+    color: #937778;
+    font-size: 30px;
+    font-family: Merriweather !important; 
+}
+/* profile adjust ends */
+
+
+/* blog and bird intro */ 
+
+.words{
+    margin-top: center;
+    text-align: center;
+    color: black;
+    font-family: Montaga; 
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.flip-words-x {
+    -webkit-animation-name: flip-words-x;
+    animation-name: flip-words-x;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s; 
+}
+  
+  @keyframes flip-words-x {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+/* blog and bird intro ends */ 
+
+
+/* blog start */
+
+.blog-title{
+    left: 50px;
+    font-size: 36px;
+    font-family: Montaga;
+    color: #F5DF4D; 
+}
+
+.blog-button{
+	border: none;
+    padding: 20px;
+	text-align: center;
+    margin: 4px 2px;
+    color: #f8e5e5;
+    border-radius: 12px;
+    color: black;
+}
+
+/* blog end */
+
+/* birdy start */
+
+.birdy-title{
+    right: 50px;
+    font-size: 36px;
+    font-family: Montaga;
+    color: #939597;
+}
+
+.birdy-button{
+	border: none;
+    padding: 20px;
+	text-align: center;
+    margin: 4px 2px;
+    background-color: black;
+    border-radius: 12px;
+    color: #f8e5e5;
+}
+
+/* birdy end */

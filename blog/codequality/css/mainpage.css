@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color:#2C342E;
+    font-weight: bold; 
+    font-family: italic;
+}
+h2{
+    font-style: italic;
+    font-weight: bold; 
+    color: #414054;
+    position:relative;
+    left: 30px;
+}

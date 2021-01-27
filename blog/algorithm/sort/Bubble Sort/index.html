@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bubblesort.css">
+        <title>Bubble Sort</title>
+    </head>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+
+    <body id="content">
+ 
+        <h1>Bubble Sort</h1>
+        <p1 class="p1">Elements are like bubbles, they move up to the right orders just like bubbles move up to surface.</p1>
+            <img src="https://i.imgur.com/tvWM3YY.gif" alt="">
+            <h2>Method</h2>
+            <p2 class="p2">If there are five elements, and each elements' value is 5, 3, 2, 4, 1.</p2><br>
+            <br>
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(5) (3) (2) (4) (1)</p3><br>
+
+            <p2 class="p2">But I want the values to be like 1, 2, 3, 4, 5.  So, I need to swap the elements.</p2><br>
+            <p2 class="p2">From [0], I started to compare the first two elements.</p2><br>
+
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(5) (3) (2) (4) (1)</p3><br>
+            <p3 class="p3">Since 5 > 3, those two need to swap.</p3><br>
+
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(3) (2) (5) (4) (1)</p3><br>
+            <p3 class="p3">Since 5 > 4, content in [2] and [3] need to sawp.</p3><br>
+            <p3 class="p3">and so on</p3><br>
+
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(3) (2) (4) (5) (1)</p3><br>
+            <p3 class="p3">keep swapping</p3><br>
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(3) (2) (4) (1) (5)</p3><br>
+            <p3 class="p3">keep swapping</p3><br>
+
+            <p2 class="p2">Now, the first element is in its right order.</p3><br>
+            <br>
+            <p2 class="p2">Next, swap the FIEST element like above.</p3><br>
+            <p2 class="p2">Result will be :</p2><br>
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(2) (1) (4) (3) (5)</p3><br>
+
+            <p2 class="p2">Keep repeating those steps like above.</p2><br>
+            <p2 class="p2">Result will be :</p2><br>
+            <p3 class="p3">[0] [1] [2] [3] [4]</p3><br>
+            <p3 class="p3">(1) (2) (3) (4) (5)</p3><br>
+
+            <h2>Usage & Code Demo</h2>
+            <p3 class="p3">Bubble sort is often use for data with less complexity.</p3><br>
+
+            <h3>C++ example</h3>
+            <p2 class="p2"># include <iostream></p2><br>
+            <p2 class="p2">using std::cout;</p2><br>
+            <p2 class="p2">int main()</p2><br>
+            <p2 class="p2">{</p2><br>
+            <p2 class="p2">&emsp;int num[6] = { 5, 3, 2, 4, 1 } ;</p2><br>
+            <p2 class="p2">&emsp;int temp = 0 ; // for tempery usage</p2><br>
+            <p2 class="p2">&emsp;cout << "Original order" << endl ;</p2><br>
+            <p2 class="p2">&emsp;for( int i = 0 ; 5 > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;cout << num[i] << endl ;</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">&emsp;for( int i = 0 ; 5 > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;for( int j = i+1 ; 5 > j ; j++ ) {</p2><br>
+            <p2 class="p2"> &emsp;&emsp;&emsp;if( num[i] > num[j] ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;temp = num[i] ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;num[i] = num[j] ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;num[j] = temp ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;}</p2><br>
+            <p2 class="p2">&emsp;&emsp;}</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">&emsp;cout << "After Bubble Sort" << endl ;</p2><br>
+            <p2 class="p2">&emsp;for( int i = 0 ; 5 > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;cout << num[i] << endl ;</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">}</p2><br>
+
+            <h3>Java example</h3>
+            <p2 class="p2">public class Main{</p2><br>
+            <p2 class="p2">&emsp;&nbsp;&nbsp;&nbsp;public static void main(String []args){</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;int num[] = { 5, 3, 2, 4, 1 } ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;int temp = 0 ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;System.out.println( "Original order" ) ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;for( int i = 0 ; 5 > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&nbsp;&nbsp;System.out.println( num[i] ) ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;}</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;or( int i = 0 ; 5 > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&nbsp;&nbsp;for( int j = i+1 ; 5 > j ; j++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;if( num[i] > num[j] ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;temp = num[i] ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;num[i] = num[j] ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;num[j] = temp ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;}</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&nbsp;&nbsp;}</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;}</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;System.out.println( "After Bubble Sort" ) ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;for( int i = 0 ; 5 > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&nbsp;&nbsp;System.out.println( num[i] ) ;</p2><br>
+            <p2 class="p2">&emsp;&emsp;&nbsp;&nbsp;}</p2><br>
+            <p2 class="p2">&emsp;&nbsp;&nbsp;&nbsp;}</p2><br>
+            <p2 class="p2">&nbsp;&nbsp;}</p2><br>
+            <br>
+
+            <h3>Python example</h3><br>
+            <p2 class="p2">def bubbleSort(material):</p2><br>
+            <p2 class="p2">&emsp;length = len(material)</p2><br>
+            <p2 class="p2">&emsp;for i in range(length-1):</p2><br>
+            <p2 class="p2">&emsp;&emsp;for j in range(0, length-i-1):</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;if material[j] > material[j+1]:</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;material[j], material[j+1] = material[j+1], material[j]</p2><br>
+            <p2 class="p2">&emsp;material = [5, 3, 2, 4, 1]</p2><br>
+            <p2 class="p2">&emsp;print ("Original order : ")</p2><br>
+            <p2 class="p2">&emsp;for i in range(len(material)):</p2><br>
+            <p2 class="p2">&emsp;&emsp;print (" % d" % material[i]</p2><br>   
+            <p2 class="p2">&emsp;bubbleSort(material)</p2><br>
+            <p2 class="p2">&emsp;print ("After Bubble Sort")</p2><br>
+            <p2 class="p2">&emsp;for i in range(len(material)):</p2><br>
+            <p2 class="p2">&emsp;&emsp;print (" % d" % material[i])</p2><br>
+
+    </body>
+</html>
