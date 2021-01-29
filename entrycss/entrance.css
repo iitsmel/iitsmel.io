@@ -1,5 +1,5 @@
 .title{
-    font-size: 10vw;
+    font-size: 5vw;
     color: #f8e5e5;
     margin: 5px 0;
     position: absolute;
@@ -72,11 +72,11 @@
     font-size: 2.5vw;
 }
 .profile-pic{
-    top:108%;
+    top:103%;
     position: absolute;
     right: 5vw;
-    max-width: 25vw;
-    max-width: 25vw;
+    max-width: 20vw;
+    max-width: 20vw;
 }
 
 .quote{
@@ -96,7 +96,7 @@
 .words{
     color: black;
     font-family: Montaga; 
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: lighter;
 }
 
@@ -147,7 +147,7 @@
 
 .blog-title{
     left: 50px;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: Montaga;
     color: #F5DF4D; 
 }
@@ -168,7 +168,7 @@
 
 .birdy-title{
     right: 50px;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: Montaga;
     color: #939597;
 }
