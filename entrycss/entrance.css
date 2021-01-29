@@ -16,7 +16,7 @@
     top:105%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .move2{
@@ -25,7 +25,7 @@
     top:110%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .move3{
@@ -34,7 +34,7 @@
     top:115%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .move4{
@@ -43,7 +43,7 @@
     top:120%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .move5{
@@ -52,7 +52,7 @@
     top:125%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .move6{
@@ -61,7 +61,7 @@
     top:130%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .move7{
@@ -70,20 +70,20 @@
     top:135%;
     left: 2vw;
     color: #c39ea0;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .profile-pic{
     top:108%;
     position: absolute;
     right: 5vw;
-    max-width: 20vw;
-    max-width: 20vw;
+    max-width: 25vw;
+    max-width: 25vw;
 }
 
 .quote{
     margin: 5px 0;
     position: absolute;
-    top:145%;
+    top:140%;
     right: 5vw;
     color: #937778;
     font-size: 3vw;
