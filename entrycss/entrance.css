@@ -1,105 +1,95 @@
-.title{
-    font-size: 64px;
-    color: #f8e5e5;
-    margin: 5px 0;
-    position: absolute;
-    bottom:50px;
-    right: 50px;
-}
-
-
 /* profile adjust starts */
 
 .move1 {
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1030px;
-    left: 50px;
+    top:125%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 /* 50px */
 
 .move2{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1085px;
-    left: 50px;
+    top:130%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 /* 30px */
 
 .move3{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1115px;
-    left: 50px;
+    top:135%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 /* 50px */
 
 .move4{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1165px;
-    left: 50px;
+    top:140%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 /* 30px */
 
 .move5{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1195px;
-    left: 50px;
+    top:145%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 /* 50px */
 
 .move6{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1245px;
-    left: 50px;
+    top:150%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 
 /* 30px */
 
 .move7{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1275px;
-    left: 50px;
+    top:155%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 3vw;
 }
 .profile-pic{
-    top:1000px;
+    top:123%;
     position: absolute;
-    right: 50px;
-    max-width: 300px;
-    max-width: 300px;
+    right: 5vw;
+    max-width: 15vw;
+    max-width: 15vw;
 }
 
 .quote{
     margin: 5px 0;
     position: absolute;
     top:1350px;
-    right: 50px;
+    right: 5vw;
     color: #937778;
-    font-size: 30px;
+    font-size: 3vw;
     font-family: Merriweather !important; 
 }
 /* profile adjust ends */
@@ -163,7 +153,7 @@
 
 .blog-title{
     left: 50px;
-    font-size: 36px;
+    font-size: 3vw;
     font-family: Montaga;
     color: #F5DF4D; 
 }
@@ -184,7 +174,7 @@
 
 .birdy-title{
     right: 50px;
-    font-size: 36px;
+    font-size: 3vw;
     font-family: Montaga;
     color: #939597;
 }
@@ -200,3 +190,13 @@
 }
 
 /* birdy end */
+
+.footer {
+    position: related;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eeceac;
+    color: #de8887;
+    text-align: center;
+ }
