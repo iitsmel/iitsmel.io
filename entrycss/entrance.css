@@ -107,7 +107,7 @@
     animation-duration: 1.5s; 
 }
   
-  @keyframes flip-words-x {
+@keyframes flip-words-x {
   from {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
