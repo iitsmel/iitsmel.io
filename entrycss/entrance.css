@@ -1,5 +1,5 @@
 .title{
-    font-size: 64px;
+    font-size: 5vw;
     color: #f8e5e5;
     margin: 5px 0;
     position: absolute;
@@ -7,99 +7,85 @@
     right: 50px;
 }
 
-
 /* profile adjust starts */
 
 .move1 {
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1030px;
-    left: 50px;
+    top:105%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
-/* 50px */
 
 .move2{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1085px;
-    left: 50px;
+    top:110%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
-/* 30px */
 
 .move3{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1115px;
-    left: 50px;
+    top:115%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
-/* 50px */
 
 .move4{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1165px;
-    left: 50px;
+    top:120%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
-/* 30px */
 
 .move5{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1195px;
-    left: 50px;
+    top:125%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
-/* 50px */
 
 .move6{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1245px;
-    left: 50px;
+    top:130%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
-
-/* 30px */
 
 .move7{
-    margin: 5px 0;
+    margin: 5px;
     position: absolute;
-    top:1275px;
-    left: 50px;
+    top:135%;
+    left: 2vw;
     color: #c39ea0;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 .profile-pic{
-    top:1000px;
+    top:103%;
     position: absolute;
-    right: 50px;
-    max-width: 300px;
-    max-width: 300px;
+    right: 5vw;
+    max-width: 20vw;
+    max-width: 20vw;
 }
 
 .quote{
     margin: 5px 0;
     position: absolute;
-    top:1350px;
-    right: 50px;
+    top:140%;
+    right: 5vw;
     color: #937778;
-    font-size: 30px;
+    font-size: 2.5vw;
     font-family: Merriweather !important; 
 }
 /* profile adjust ends */
@@ -108,11 +94,9 @@
 /* blog and bird intro */ 
 
 .words{
-    margin-top: center;
-    text-align: center;
     color: black;
     font-family: Montaga; 
-    font-size: 48px;
+    font-size: 5vw;
     font-weight: lighter;
 }
 
@@ -123,7 +107,7 @@
     animation-duration: 1.5s; 
 }
   
-  @keyframes flip-words-x {
+@keyframes flip-words-x {
   from {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -163,7 +147,7 @@
 
 .blog-title{
     left: 50px;
-    font-size: 36px;
+    font-size: 2.5vw;
     font-family: Montaga;
     color: #F5DF4D; 
 }
@@ -184,7 +168,7 @@
 
 .birdy-title{
     right: 50px;
-    font-size: 36px;
+    font-size: 2.5vw;
     font-family: Montaga;
     color: #939597;
 }
@@ -200,3 +184,13 @@
 }
 
 /* birdy end */
+
+.footer {
+    position: related;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eeceac;
+    color: #de8887;
+    text-align: center;
+ }
