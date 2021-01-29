@@ -1,3 +1,13 @@
+.title{
+    font-size: 64px;
+    color: #f8e5e5;
+    margin: 5px 0;
+    position: absolute;
+    bottom:50px;
+    right: 50px;
+}
+
+
 /* profile adjust starts */
 
 .move1 {
@@ -9,8 +19,6 @@
     font-size: 3vw;
 }
 
-/* 50px */
-
 .move2{
     margin: 5px;
     position: absolute;
@@ -19,8 +27,6 @@
     color: #c39ea0;
     font-size: 3vw;
 }
-
-/* 30px */
 
 .move3{
     margin: 5px;
@@ -31,8 +37,6 @@
     font-size: 3vw;
 }
 
-/* 50px */
-
 .move4{
     margin: 5px;
     position: absolute;
@@ -41,8 +45,6 @@
     color: #c39ea0;
     font-size: 3vw;
 }
-
-/* 30px */
 
 .move5{
     margin: 5px;
@@ -53,8 +55,6 @@
     font-size: 3vw;
 }
 
-/* 50px */
-
 .move6{
     margin: 5px;
     position: absolute;
@@ -63,9 +63,6 @@
     color: #c39ea0;
     font-size: 3vw;
 }
-
-
-/* 30px */
 
 .move7{
     margin: 5px;
