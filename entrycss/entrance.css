@@ -13,7 +13,7 @@
 .move1 {
     margin: 5px;
     position: absolute;
-    top:125%;
+    top:105%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
@@ -22,7 +22,7 @@
 .move2{
     margin: 5px;
     position: absolute;
-    top:130%;
+    top:110%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
@@ -31,7 +31,7 @@
 .move3{
     margin: 5px;
     position: absolute;
-    top:135%;
+    top:115%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
@@ -40,7 +40,7 @@
 .move4{
     margin: 5px;
     position: absolute;
-    top:140%;
+    top:120%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
@@ -49,7 +49,7 @@
 .move5{
     margin: 5px;
     position: absolute;
-    top:145%;
+    top:125%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
@@ -58,7 +58,7 @@
 .move6{
     margin: 5px;
     position: absolute;
-    top:150%;
+    top:130%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
@@ -67,23 +67,23 @@
 .move7{
     margin: 5px;
     position: absolute;
-    top:155%;
+    top:135%;
     left: 2vw;
     color: #c39ea0;
     font-size: 3vw;
 }
 .profile-pic{
-    top:123%;
+    top:108%;
     position: absolute;
     right: 5vw;
-    max-width: 10vw;
-    max-width: 10vw;
+    max-width: 15vw;
+    max-width: 15vw;
 }
 
 .quote{
     margin: 5px 0;
     position: absolute;
-    top:1350px;
+    top:145%;
     right: 5vw;
     color: #937778;
     font-size: 3vw;
