@@ -21,7 +21,7 @@
 .move2{
     margin: 5px;
     position: absolute;
-    top:110%;
+    top:108%;
     left: 2vw;
     color: #c39ea0;
     font-size: 2.5vw;
@@ -30,7 +30,7 @@
 .move3{
     margin: 5px;
     position: absolute;
-    top:115%;
+    top:111%;
     left: 2vw;
     color: #c39ea0;
     font-size: 2.5vw;
@@ -39,7 +39,7 @@
 .move4{
     margin: 5px;
     position: absolute;
-    top:120%;
+    top:114%;
     left: 2vw;
     color: #c39ea0;
     font-size: 2.5vw;
@@ -48,7 +48,7 @@
 .move5{
     margin: 5px;
     position: absolute;
-    top:125%;
+    top:117%;
     left: 2vw;
     color: #c39ea0;
     font-size: 2.5vw;
@@ -57,7 +57,7 @@
 .move6{
     margin: 5px;
     position: absolute;
-    top:130%;
+    top:120%;
     left: 2vw;
     color: #c39ea0;
     font-size: 2.5vw;
@@ -66,11 +66,30 @@
 .move7{
     margin: 5px;
     position: absolute;
-    top:135%;
+    top:123%;
     left: 2vw;
     color: #c39ea0;
     font-size: 2.5vw;
 }
+
+.move8{
+    margin: 5px;
+    position: absolute;
+    top:126%;
+    left: 2vw;
+    color: #c39ea0;
+    font-size: 2.5vw;
+}
+
+.move9{
+    margin: 5px;
+    position: absolute;
+    top:129%;
+    left: 2vw;
+    color: #c39ea0;
+    font-size: 2.5vw;
+}
+
 .profile-pic{
     top:103%;
     position: absolute;
@@ -88,6 +107,7 @@
     font-size: 2.5vw;
     font-family: Merriweather !important; 
 }
+
 /* profile adjust ends */
 
 
@@ -193,4 +213,4 @@
     background-color: #eeceac;
     color: #de8887;
     text-align: center;
- }
+}
