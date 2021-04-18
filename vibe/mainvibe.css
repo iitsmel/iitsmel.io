@@ -1,0 +1,64 @@
+h1 { 
+    font-family: "Permanent Marker"; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold;
+    color: #43ddaa;
+    text-align: center;
+}
+.winter{
+    position: relative;
+    left: 100px;
+    font-family: Cinzel;
+    font-size: 30px;
+    color: #b3bdbc;
+}
+.spring{
+    position: relative;
+    left: 100px;
+    font-family: "Gloria Hallelujah";
+    font-size: 30px;
+    color: #c89da1;
+}
+.summer{
+    position: relative;
+    left: 100px;
+    font-family: "Amatic SC";
+    font-size: 30px;
+    color: #0074cc;
+}
+.fall{
+    position: relative;
+    left: 100px;
+    font-family: "Great Vibes";
+    font-size: 30px;
+    color: #c0413b;
+}
+.wp{
+    position: relative;
+    left: 100px;
+    font-family: Cinzel;
+    font-size: 25px;
+    color: #b3bdbc;
+}
+.spp{
+    position: relative;
+    left: 100px;
+    font-family: "Gloria Hallelujah";
+    font-size: 25px;
+    color: #c89da1;
+}
+.sup{
+    position: relative;
+    left: 100px;
+    font-family: "Amatic SC";
+    font-size: 25px;
+    color: #0074cc;  
+}
+.fp{
+    position: relative;
+    left: 100px;
+    font-family: "Great Vibes";
+    font-size: 25px;
+    color: #c0413b;
+}
