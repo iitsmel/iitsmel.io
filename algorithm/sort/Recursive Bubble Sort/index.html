@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="recursivebubble.css">
+        <title>Recursive Bubble Sort</title>
+    </head>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+
+    <body id="content">
+ 
+        <h1>Recursive Bubble Sort</h1>
+        <p1 class="p1">A quick review of bubble sort:</p1>
+        <br>
+        <p1 class="p1">“Bubble Sort” swaps the first two elements if the first element is larger than the second one, the algorithm keeps doing those same steps, 2 and 3 swap, 3 and 4 swap, until all elements are in order.</p1>
+        <br>
+        <p1 class="p1">Moving on to the word 'recursion'.</p1>
+        <br>
+        <p1 class="p1">A recursive function is an independent function outside the main function. Which also called itself in its function.</p1>
+        <br>
+        <p1 class="p1">example:</p1>
+        <br>
+        <p3 class="p3">void recursion(){</p3><br>
+        <p3 class="p3">recursion() ;</p3><br>
+        <p3 class="p3">}</p3>
+
+            <h2 class="p2">Method</h2>
+            <p2 class="p2">When implementing Recursive Bubble Sort, one will need to use recursive function.</p2><br>
+
+            <h2 class="p2">Usage & Code Demo</h2>
+            <p3 class="p3">Recursive Bubble Sort is more like a way to test whether one is familiar with both recursion and bubble sort.</p3><br>
+
+            <h3>C++ example</h3>
+            <p2 class="p2"># include <iostream></p2><br>
+            <p2 class="p2"># include <algorithm></p2><br>
+            <p2 class="p2">using std::cout;</p2><br>
+            <p2 class="p2">using std::swap;</p2><br>
+            <br>
+            <p2 class="p2">void recursivebubblesort(int after[], int number) {</p2><br>
+            <p2 class="p2">&emsp;int temp = number - 1;</p2><br>
+            <p2 class="p2">&emsp;for ( int i = 0 ; temp > i ; i++ ) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;if (after[i] > after[i+1])</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;swap(after[i], after[i+1]);</p2><br>
+            <p2 class="p2">&emsp;}</p2><br><br>
+            <p2 class="p2">&emsp;if (temp > 1 )</p2><br>
+            <p2 class="p2">&emsp;&emsp;recursivebubblesort(after, number-1);</p2><br>
+            <p2 class="p2">}</p2><br>
+            <br>
+            <p2 class="p2">void printout(int original[], int after[], int number) {</p2><br>
+            <p2 class="p2">&emsp;cout << "Before Recursive Bubble Sort" << "\n";</p2><br>
+            <p2 class="p2">&emsp;for (int i = 0 ; number > i ; i++ )</p2><br>
+            <p2 class="p2">&emsp;&emsp;cout << original[i] << "\n";</p2><br>
+            <p2 class="p2">&emsp;cout << "After Recursive Bubble Sort" << "\n";</p2><br>
+            <p2 class="p2">&emsp;for (int i = 0 ; number > i ; i++ )</p2><br>
+            <p2 class="p2">&emsp;&emsp;cout << after[i] << "\n";</p2><br>
+            <p2 class="p2">}</p2><br>
+            <br>
+            <p2 class="p2">int main() {</p2><br>
+            <p2 class="p2">&emsp;int original[6] = { 5, 3, 2, 4, 1 };</p2><br>
+            <p2 class="p2">&emsp;int after[6] = { 5, 3, 2, 4, 1 };</p2><br>
+            <p2 class="p2">&emsp;int number = sizeof(original)/sizeof(original[0]);</p2><br>
+            <p2 class="p2">&emsp;recursivebubblesort(after, number);</p2><br>
+            <p2 class="p2">&emsp;printout(original, after, number);</p2><br>
+            <p2 class="p2">&emsp;int temp = number - 1;</p2><br>
+            <br>
+
+            <h3>Java example</h3>
+            <p2 class="p2">import java.util.Arrays;</p2>
+            <p2 class="p2">public class RecursiveBubble {</p2><br>
+            <p2 class="p2">&emsp;static void swapping(int after[], int i){</p2><br>
+            <p2 class="p2">&emsp;&emsp;int temp = after[i];</p2><br>
+            <p2 class="p2">&emsp;&emsp;after[i] = after[i+1];</p2><br>
+            <p2 class="p2">&emsp;&emsp;after[i+1] = temp;</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <br>
+            <p2 class="p2">&emsp;static void recursivebubblesort(int after[], int length){</p2><br>
+            <p2 class="p2">&emsp;&emsp;for (int i = 0; length - 1 > i ; i++)</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;if (after[i] > after[i+1])</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;&emsp;swapping( after, i );</p2><br><br>
+            <p2 class="p2">&emsp;&emsp;if ( length > 1 )</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;recursivebubblesort(after, length - 1);</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <br>
+            <p2 class="p2">&emsp;public static void main(String[] args){</p2><br>
+            <p2 class="p2">&emsp;&emsp;int original[] = { 5, 3, 2, 4, 1 };</p2><br>
+            <p2 class="p2">&emsp;&emsp;int after[] = { 5, 3, 2, 4, 1 };</p2><br>
+            <p2 class="p2">&emsp;&emsp;recursivebubblesort(after, after.length);</p2><br>
+            <p2 class="p2">&emsp;&emsp;System.out.println( "Original order" );</p2><br>
+            <p2 class="p2">&emsp;&emsp;System.out.println(Arrays.toString(original));</p2><br>
+            <p2 class="p2">&emsp;&emsp;System.out.println( "After Recursive Bubble Sort" );</p2><br>
+            <p2 class="p2">&emsp;&emsp;System.out.println(Arrays.toString(after));</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">}</p2><br>
+            <br>
+
+            <h3>Python example</h3><br>
+            <p2 class="p2">def swap(after, i):</p2><br>
+            <p2 class="p2">&emsp;temp = after[i]</p2><br>
+            <p2 class="p2">&emsp;after[i] = after[i+1]</p2><br>
+            <p2 class="p2">&emsp;after[i+1] = temp</p2><br>
+            <br>
+            <p2 class="p2">def recursivebubblesort(after, length):</p2><br>
+            <p2 class="p2">&emsp;for i in range(length - 1):</p2><br>
+            <p2 class="p2">&emsp;&emsp;if after[i] > after[i + 1]:</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;swap(after, i)</p2><br>
+            <p2 class="p2">&emsp;if length > 1:</p2><br>
+            <p2 class="p2">&emsp;&emsp;recursivebubblesort(after, length-1)</p2><br>
+            <br>
+
+            <p2 class="p2">if __name__ == '__main__':</p2><br>
+            <p2 class="p2">&emsp;original = [ 5, 3, 2, 4, 1 ]</p2><br>
+            <p2 class="p2">&emsp;after = [ 5, 3, 2, 4, 1 ]</p2><br>
+            <p2 class="p2">&emsp;length = len(after)</p2><br>
+            <p2 class="p2">&emsp;recursivebubblesort(after, length)</p2><br>   
+            <p2 class="p2">&emsp;print ("Original order : ")</p2><br>
+            <p2 class="p2">&emsp;print(original)</p2><br>
+            <p2 class="p2">&emsp;print ("After Recursive Bubble Sort")</p2><br>
+            <p2 class="p2">&emsp;print(after)</p2><br>
+
+    </body>
+</html>

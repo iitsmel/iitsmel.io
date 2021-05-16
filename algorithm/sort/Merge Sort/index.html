@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mergesort.css">
+        <title>Merge Sort</title>
+    </head>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+
+    <body id="content">
+ 
+        <h1>Merge Sort</h1>
+        <p1 class="p1">A divide and conquer algorithm.</p1>
+        <br>
+        <p1 class="p1">In order to implement merge sort, the input must be sorted first.</p1>
+        <br>
+        <p1 class="p1">Step 1: Dividing the input array/vector into 2 halves.</p1>
+        <br>
+        <p1 class="p1">Step 2: Call the merge sort function for the two parts.</p1>
+        <br>
+        <p1 class="p1">Step 3: Merge the two sorted parts.</p1>
+        <br>
+
+            <h2 class="p2">Method</h2>
+            <p2 class="p2">One will need to be familiar with "node" and "child" in order to fully understand merge sort.</p2><br>
+
+            <h2 class="p2">Usage & Code Demo</h2>
+            <p3 class="p3">A stable sort like merge sort is useful for linked lists.</p3><br>
+            <p3 class="p3">Best Case: Ω(nlogn) typical, Ω(n) natural variant</p3><br>
+            <p3 class="p3">Average Case: Θ(nlogn)</p3><br>
+            <p3 class="p3">Worst Case: O(nlogn)</p3><br>
+            <p3 class="p3">Worst Case Space Complexity: O(n) total with O(n) auxiliary, O(1) auxiliary with linked lists.</p3><br>
+            <br>
+
+            <h3>C++ example</h3>
+            <p2 class="p2"># include <iostream></p2><br>
+            <p2 class="p2">using std::cout;</p2><br>
+            <br>
+            <p2 class="p2">void merge(int process[], int left, int right, int middle) {</p2><br>
+            <p2 class="p2">&emsp;// lns = left node size, rns = right node size</p2><br>
+            <p2 class="p2">&emsp;int lns = middle - left + 1;</p2><br>
+            <p2 class="p2">&emsp;int rns = right - middle;</p2><br>
+            <p2 class="p2">&emsp;int l[lns];</p2><br>
+            <p2 class="p2">&emsp;int r[rns];</p2><br>
+            <br>
+            <p2 class="p2">&emsp;for (int i = 0 ; lns > i ; i++)</p2><br>
+            <p2 class="p2">&emsp;&emsp;l[i] = process[left + i];</p2><br>
+            <p2 class="p2">&emsp;for (int i = 0 ; rns > i ; i++)</p2><br>
+            <p2 class="p2">&emsp;&emsp;r[i] = process[middle + 1 + i];</p2><br>
+            <br>
+            <p2 class="p2">&emsp;int leftindex = 0;</p2><br>
+            <p2 class="p2">&emsp;int rightindex = 0;</p2><br>
+            <p2 class="p2">&emsp;int mergeindex = left;</p2><br>
+            <br>
+            <p2 class="p2">&emsp;while (lns > leftindex && rns > rightindex) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;if (r[rightindex] >= l[leftindex]) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;process[mergeindex] = l[leftindex];</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;leftindex++;</p2><br>
+            <p2 class="p2">&emsp;&emsp;} else {</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;process[mergeindex] = r[rightindex];</p2><br>
+            <p2 class="p2">&emsp;&emsp;&emsp;rightindex++;</p2><br>
+            <p2 class="p2">&emsp;&emsp;}</p2><br>
+            <p2 class="p2">&emsp;&emsp;mergeindex++;</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <br>
+            <p2 class="p2">&emsp;while (lns > leftindex) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;process[mergeindex] = l[leftindex];</p2><br>
+            <p2 class="p2">&emsp;&emsp;leftindex++;</p2><br>
+            <p2 class="p2">&emsp;&emsp;mergeindex++;</p2><br>
+            <p2 class="p2">&emsp;&emsp;}</p2><br>
+            <br>
+            <p2 class="p2">&emsp;while (rns > rightindex) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;process[mergeindex] = r[rightindex];</p2><br>
+            <p2 class="p2">&emsp;&emsp;rightindex++;</p2><br>
+            <p2 class="p2">&emsp;&emsp;mergeindex++;</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">}</p2><br>
+            <br>
+            <p2 class="p2">void mergesort(int process[], int left, int right) {</p2><br>
+            <p2 class="p2">&emsp;if (right > left) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;int middle = left + (right - left) / 2;</p2><br>
+            <p2 class="p2">&emsp;&emsp;mergesort(process, left, middle);</p2><br>
+            <p2 class="p2">&emsp;&emsp;mergesort(process, middle+1, right);</p2><br>
+            <p2 class="p2">&emsp;&emsp;merge(process, left, right, middle);</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">}</p2><br>
+            <br>
+            <p2 class="p2">int main() {</p2><br>
+            <p2 class="p2">&emsp;int num[] = { 5, 3, 2, 4, 1 };</p2><br>
+            <p2 class="p2">&emsp;int size = sizeof(num) / sizeof(num[0]);</p2><br>
+            <br>
+            <p2 class="p2">&emsp;cout << "Original order" << "\n";</p2><br>
+            <p2 class="p2">&emsp;for (int i = 0 ; 5 > i ; i++) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;cout << num[i] << "\n";</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <br>
+            <p2 class="p2">&emsp;mergesort(num, 0, size - 1);</p2><br>
+            <p2 class="p2">&emsp;cout << "After Merge Sort" << "\n";</p2><br>
+            <p2 class="p2">&emsp;for (int i = 0 ; 5 > i ; i++) {</p2><br>
+            <p2 class="p2">&emsp;&emsp;cout << num[i] << "\n";</p2><br>
+            <p2 class="p2">&emsp;}</p2><br>
+            <p2 class="p2">}</p2><br>
+
+            <h3>Java example</h3>
+            <p2 class="p2">import java.util.Arrays;</p2>
+            <p2 class="p2">public class MergeSort {</p2><br>
+            
+            <br>
+
+            <h3>Python example</h3><br>
+
+    </body>
+</html>
